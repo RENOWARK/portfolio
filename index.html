@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>全國運動場搜尋網</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+	
+			<img src="img/logobar@2.png" alt="Logo" class="header__logo" id="hdlogo">
+
+			<div class="likes">
+				<div class="likes__field">
+
+					
+
+					<svg class="likes__icon">
+						<use href="img/icons.svg#icon-heart"></use>
+					</svg>
+				</div>
+				<div class="likes__panel">
+					<ul class="likes__list">
+						<!-- 
+						<li>
+							<a class="likes__link likes__link" href="#23456">
+								<figure class="likes__fig">
+									<img src="img/test-1.jpg" alt="Test">
+								</figure>
+								<div class="likes__data">
+									<h3 class="likes__name heading-ter">鼓山國小棒球場</h3>
+									<p class="likes__add">高雄市鼓山區臨海二路50號</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a class="likes__link likes__link" href="#23456">
+								<figure class="likes__fig">
+									<img src="img/test-1.jpg" alt="Test">
+								</figure>
+								<div class="likes__data">
+									<h3 class="likes__name heading-ter">鼓山國小棒球場</h3>
+									<p class="likes__add">高雄市鼓山區臨海二路50號</p>
+								</div>
+							</a>
+						</li> -->
+
+					</ul>
+				</div>
+			</div>
+
+		</header>
+		<main class="main">
+			<div class="big__left"><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+				<section class="form">
+						<form class="search">
+		
+							<div class="search__topgroup">
+								<input type="text" class="search__field" placeholder="請先選擇城市">
+								<button class="btn search__btn">
+									<svg class="search__icon">
+										<use href="img/icons.svg#icon-search"></use>
+									</svg>
+									<span>Search</span>
+								</button>
+							</div>
+		
+							<!--北部-->
+							<div class="search__geogroup">
+								<h4 class="search__geoname heading-ter">北部</h4>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="臺北市" name="city" value="臺北市" checked="true">
+									<label for="臺北市" class="search__radio-label">
+										<span class="search__radio-button btn">臺北市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="新北市" name="city" value="新北市">
+									<label for="新北市" class="search__radio-label">
+										<span class="search__radio-button btn">新北市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="基隆市" name="city" value="基隆市">
+									<label for="基隆市" class="search__radio-label">
+										<span class="search__radio-button btn">基隆市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="桃園市" name="city" value="桃園市">
+									<label for="桃園市" class="search__radio-label">
+										<span class="search__radio-button btn">桃園市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="新竹市" name="city" value="新竹市">
+									<label for="新竹市" class="search__radio-label">
+										<span class="search__radio-button btn">新竹市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="宜蘭縣" name="city" value="宜蘭縣">
+									<label for="宜蘭縣" class="search__radio-label">
+										<span class="search__radio-button btn">宜蘭縣</span>
+									</label>
+								</div>
+							</div>
+		
+		
+							<!--中部-->
+							<div class="search__geogroup">
+								<h4 class="search__geoname heading-ter">中部</h4>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="苗栗縣" name="city" value="苗栗縣">
+									<label for="苗栗縣" class="search__radio-label">
+										<span class="search__radio-button btn">苗栗縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="臺中市" name="city" value="臺中市">
+									<label for="臺中市" class="search__radio-label">
+										<span class="search__radio-button btn">臺中市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="彰化縣" name="city" value="彰化縣">
+									<label for="彰化縣" class="search__radio-label">
+										<span class="search__radio-button btn">彰化縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="南投縣" name="city" value="南投縣">
+									<label for="南投縣" class="search__radio-label">
+										<span class="search__radio-button btn">南投縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="雲林縣" name="city" value="雲林縣">
+									<label for="雲林縣" class="search__radio-label">
+										<span class="search__radio-button btn">雲林縣</span>
+									</label>
+								</div>
+		
+		
+							</div>
+		
+							<!--南部-->
+							<div class="search__geogroup">
+								<h4 class="search__geoname heading-ter">南部</h4>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="嘉義市" name="city" value="嘉義市">
+									<label for="嘉義市" class="search__radio-label">
+										<span class="search__radio-button btn">嘉義市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="嘉義縣" name="city" value="嘉義縣">
+									<label for="嘉義縣" class="search__radio-label">
+										<span class="search__radio-button btn">嘉義縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="臺南市" name="city" value="臺南市">
+									<label for="臺南市" class="search__radio-label">
+										<span class="search__radio-button btn">臺南市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="高雄市" name="city" value="高雄市">
+									<label for="高雄市" class="search__radio-label">
+										<span class="search__radio-button btn">高雄市</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="屏東縣" name="city" value="屏東縣">
+									<label for="屏東縣" class="search__radio-label">
+										<span class="search__radio-button btn">屏東縣</span>
+									</label>
+								</div>
+							</div>
+		
+							<!--東部外島-->
+							<div class="search__geogroup">
+								<h4 class="search__geoname heading-ter">東部與外島</h4>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="花蓮縣" name="city" value="花蓮縣">
+									<label for="花蓮縣" class="search__radio-label">
+										<span class="search__radio-button btn">花蓮縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="臺東縣" name="city" value="臺東縣">
+									<label for="臺東縣" class="search__radio-label">
+										<span class="search__radio-button btn">臺東縣</span>
+									</label>
+								</div>
+		
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="澎湖縣" name="city" value="澎湖縣">
+									<label for="澎湖縣" class="search__radio-label">
+										<span class="search__radio-button btn">澎湖縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="金門縣" name="city" value="金門縣">
+									<label for="金門縣" class="search__radio-label">
+										<span class="search__radio-button btn">金門縣</span>
+									</label>
+								</div>
+		
+								<div class="search__group">
+									<input type="radio" class="search__radio-input" id="連江縣" name="city" value="連江縣">
+									<label for="連江縣" class="search__radio-label">
+										<span class="search__radio-button btn">連江縣</span>
+									</label>
+								</div>
+							</div>
+		
+		
+		
+		
+						</form>
+					</section>
+		
+					<section class="gymres">
+						<h1 class="heading-pri">運動場清單</h1>
+						<nav class="results">
+							<ul class="results__list results__list--mh">
+		
+								<!-- <li>
+									<a class="results__link results__link--active" href="#23456">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#76767">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#85354">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#43563">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#2256665">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#7567567">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#5676577">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#98798">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a class="results__link" href="#5464646456">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li>
+		
+								<li>
+									<a class="results__link" href="#345345435">
+										<figure class="results__fig">
+											<img src="img/test-1.jpg" alt="Test">
+										</figure>
+										<div class="results__data">
+											<h3 class="results__name heading-ter">鼓山國小棒球場</h3>
+											<p class="results__add">高雄市鼓山區臨海二路50號</p>
+										</div>
+									</a>
+								</li> -->
+		
+							</ul>
+		
+						</nav>
+		
+						<div class="results__pages">
+		
+							<!-- <button class="btn btn--inline  results__btn results__btn--prev">
+								<svg class="results__icon">
+									<use href="img/icons.svg#icon-caret-left"></use>
+								</svg>
+								<span>Page 1</span>
+							</button>
+		
+							<button class="btn btn--inline  results__btn--mid">
+								<span>1/3</span>
+							</button>
+		
+							<button class="btn btn--inline  results__btn results__btn--next">
+								<span>Page 3</span>
+								<svg class="results__icon">
+									<use href="img/icons.svg#icon-caret-right"></use>
+								</svg>
+							</button> -->
+		
+						</div>
+		
+					</section>
+		
+		
+					
+		
+
+
+
+
+
+
+			</div>
+
+
+			<div class="big__right"><!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+				<section class="gymcnt">
+						<!-- 
+						<h1 class="heading-pri gymcnt__title">鼓山國小棒球場</h1>
+						<div class="gym">
+							<figure class="gym__fig">
+								<img src="img/test-1.jpg" alt="Test">
+		
+								<button class="gym__love">
+									<svg class="gym__loveicon">
+										<use href="img/icons.svg#icon-heart-o"></use>
+									</svg>
+								</button>
+							</figure>
+		
+							<div class="gym__details">
+								<div class="gym__info">
+									<svg class="gym__info-icon">
+										<use href="img/icons.svg#icon-phone"></use>
+									</svg>
+									<span class="gym__info-text">電話 : </span>
+									<span class="gym__info-data gym__info-data--tel">04-22289111#55129</span>
+								</div>
+		
+								<div class="gym__info">
+									<svg class="gym__info-icon">
+										<use href="img/icons.svg#icon-world"></use>
+									</svg>
+									<span class="gym__info-text">官網 : </span>
+									<a href="https://cmcsc.cyc.org.tw/"><span
+											class="gym__info-data gym__info-data--web">https://cmcsc.cyc.org.tw/</span></a>
+								</div>
+		
+								<div class="gym__info">
+									<svg class="gym__info-icon">
+										<use href="img/icons.svg#icon-location"></use>
+									</svg>
+									<span class="gym__info-text">地址 : </span>
+									<span class="gym__info-data gym__info-data--add">高雄市鼓山區臨海二路50號朝貴路199號</span>
+								</div>
+							</div>
+		
+						</div> 
+					-->
+		
+					</section>
+
+
+			<section class="gymesports">
+					<nav class="sports">
+						<ul class="sports__list">
+							<!-- 
+								<li class="sports__item">
+	
+								<div class="sports__info">
+									<figure class="sports__fig"><img src="img/test-2.jpg" alt="test"></figure>
+									<div class="sports__details">
+										<div class="sports__details--1">
+											<span class="sports__name heading-ter">游泳池</span>
+											<span class="sports__inout">(室內設施)</span>
+										</div>
+	
+										<div class="sports__details--2">
+											<span class="sports__state-text heading-ter">開放情況 :</span>
+											<span class="sports__state">付費開放使用</span>
+	
+										</div>
+	
+										<div class="sports__details--3">
+											<span class="sports__time-text heading-ter">開放時間 :</span>
+											<span class="sports__time">6:0-22:0</span>
+										</div>
+	
+										<div class="sports__details--4">
+											<div class="sports__week">
+												<table>
+													<tr>
+														<th>日</th>
+														<th>一</th>
+														<th>二</th>
+														<th>三</th>
+														<th>四</th>
+														<th>五</th>
+														<th>六</th>
+													</tr>
+													<tr>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-checkmark"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-checkmark"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-checkmark"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+	
+													</tr>
+												</table>
+	
+											</div>
+										</div>
+									</div>
+	
+									<div class="sports__details--5">
+										<div class="sport__fee">
+											<span class="sport__fee-text heading-ter">收費方式 :</span>
+											<span class="sport__fee-data">一般門票，90元/次；學生門票，50元/次；敬老門
+												票，50元/次；兒童(7~12歲)門票，50元/次，身心障礙者憑身心障礙手冊全時段免費使用游泳池，其監護 人或必要之陪伴者一人須購買優待票(游泳池45元)</span>
+										</div>
+									</div>
+								</div>
+							</li>
+	
+	
+	
+	
+							<li class="sports__item">
+	
+								<div class="sports__info">
+									<figure class="sports__fig"><img src="img/test-2.jpg" alt="test"></figure>
+									<div class="sports__details">
+										<div class="sports__details--1">
+											<span class="sports__name heading-ter">游泳池</span>
+											<span class="sports__inout">(室內設施)</span>
+										</div>
+	
+										<div class="sports__details--2">
+											<span class="sports__state-text heading-ter">開放情況 :</span>
+											<span class="sports__state">付費開放使用</span>
+	
+										</div>
+	
+										<div class="sports__details--3">
+											<span class="sports__time-text heading-ter">開放時間 :</span>
+											<span class="sports__time">6:0-22:0</span>
+										</div>
+	
+										<div class="sports__details--4">
+											<div class="sports__week">
+												<table>
+													<tr>
+														<th>日</th>
+														<th>一</th>
+														<th>二</th>
+														<th>三</th>
+														<th>四</th>
+														<th>五</th>
+														<th>六</th>
+													</tr>
+													<tr>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-checkmark"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-checkmark"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-checkmark"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+														<td>
+															<svg class="sports__week-icon">
+																<use href="img/icons.svg#icon-cancel"></use>
+															</svg>
+														</td>
+	
+													</tr>
+												</table>
+	
+											</div>
+										</div>
+	
+										<div class="sports__details--5">
+											<div class="sport__fee">
+												<span class="sport__fee-text heading-ter">收費方式 :</span>
+												<span class="sport__fee-data">一般門票，90元/次；學生門票，50元/次；敬老門
+													票，50元/次；兒童(7~12歲)門票，50元/次，身心障礙者憑身心障礙手冊全時段免費使用游泳池，其監護 人或必要之陪伴者一人須購買優待票(游泳池45元)</span>
+											</div>
+										</div>
+									</div>
+	
+								</div>
+							</li> 
+						-->
+						</ul>
+					</nav>
+	
+				</section>
+	
+			</div>
+
+
+
+
+
+
+
+
+
+
+		</main>
+
+		<footer class="footer">
+			<div class="copyright">
+				copyright &copy; by Reno 蔣和成. Powered by
+				<a href="https://iplay.sa.gov.tw/webapi" target="_blank" class="link">全國運動場資訊網</a>
+			</div>
+		</footer>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/bundle.js"></script></body>
+
+</html>
